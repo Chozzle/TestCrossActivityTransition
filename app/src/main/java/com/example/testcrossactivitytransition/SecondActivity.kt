@@ -1,14 +1,12 @@
 package com.example.testcrossactivitytransition
 
-import android.app.Activity
+import android.app.Activity.OVERRIDE_TRANSITION_CLOSE
+import android.app.Activity.OVERRIDE_TRANSITION_OPEN
 import android.os.Build
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.testcrossactivitytransition.databinding.ActivitySecondBinding
 
 class SecondActivity : AppCompatActivity() {
@@ -27,7 +25,7 @@ class SecondActivity : AppCompatActivity() {
             )
             overrideActivityTransition(
                 /* overrideType = */ OVERRIDE_TRANSITION_CLOSE,
-                /* enterAnim = */ R.anim.slie_in_left,
+                /* enterAnim = */ R.anim.slide_in_left,
                 /* exitAnim = */ R.anim.slide_out_right
             )
         }
