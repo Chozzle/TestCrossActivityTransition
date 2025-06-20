@@ -1,1 +1,1 @@
-![video](./video/demo.webm)
+[video](./video/demo.webm)
